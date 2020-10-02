@@ -22,6 +22,7 @@ public class PersonDTO {
 
     
     public PersonDTO(Person p) {
+        this.id = p.getP_id();
         this.fName = p.getFirstName();
         this.lName = p.getLastName();
         this.phone = p.getPhone();
@@ -31,14 +32,14 @@ public class PersonDTO {
 
     }
 
-    public PersonDTO(String fName, String lName, String phone, String street, String city, int zip) {
-        this.fName = fName;
-        this.lName = lName;
-        this.phone = phone;
-        this.street = street;
-        this.city = city;
-        this.zip = zip;
-    }
+//    public PersonDTO(String fName, String lName, String phone, String street, String city, int zip) {
+//        this.fName = fName;
+//        this.lName = lName;
+//        this.phone = phone;
+//        this.street = street;
+//        this.city = city;
+//        this.zip = zip;
+//    }
 
     
 
